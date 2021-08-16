@@ -2,19 +2,24 @@ html,
 body {
   height: 100%;
   font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(69, 90, 92) !important;
 }
 
-.logo {
-  width: 48px;
-  height: 45px;
+.navbar-text {
+  font-size: 1.2rem;
+}
+
+.navbar {
+  color: #000;
 }
 
 .gradient {
-  background: rgb(40, 40, 237);
+  background: rgba(147, 76, 255, 1);
   background: linear-gradient(
     90deg,
-    rgba(40, 40, 237, 1) 0%,
-    rgba(147, 76, 255, 1) 100%
+    rgba(147, 76, 255, 1) 0%,
+    rgb(255, 192, 203) 100%
   );
 }
 
@@ -23,6 +28,14 @@ body {
   margin-top: 4rem;
   font-size: 1.25rem;
   color: #fff;
+}
+
+.btn-rounded {
+  padding: 0.6rem 1.2rem;
+  background-color: rgb(255, 192, 203);
+  color: rgba(147, 76, 255, 1);
+  border: none;
+  font-weight: 700;
 }
 
 .feature ul {
@@ -48,6 +61,10 @@ body {
   justify-content: center;
 }
 
+.icon svg {
+  width: 2rem;
+  height: auto;
+}
 .gallery {
   background-color: whitesmoke;
 }

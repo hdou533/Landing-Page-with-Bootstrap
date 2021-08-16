@@ -7,19 +7,18 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#">MDN</a>
+          <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div class="collapse navbar-collapse navbar-text navbar-light" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -28,23 +27,33 @@
                 <a class="nav-link" href="#">Features</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
               </li>
 
+
             </ul>
           </div>
+          <button type="button" class="rounded-pill btn-rounded"> Get Started</button>
         </div>
       </nav>
+
+      <!-- Header -->
       <header class="page-header gradient">
-        <div class="container pt-3">
+        <div class="container pt-5">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-5">
-                    <h2 class="title">Build website with MDN</h2>
+                    <h2 class="title">Build website with MARS</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    <button type="button" class="btn btn-outline-success btn-lg">Read more</button>
-                    <button type="button" class="btn btn-outline-warning btn-lg">Watch video</button>
+                    <button type="button" class="btn btn-outline-light btn-lg">Read more</button>
+                    <button type="button" class="btn btn-outline-dark btn-lg">Watch video</button>
                 </div>
-                <div class="col-md-5"><img src="img/header.svg" alt="Header image"></div>
+                <div class="col-md-5"><img src="img/head.svg" alt="Header image"></div>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -66,7 +75,7 @@
               
           </div>
       </section>
-
+      <!-- Features -->
       <section class="feature gradient">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L40,128C80,128,160,128,240,144C320,160,400,192,480,181.3C560,171,640,117,720,106.7C800,96,880,128,960,149.3C1040,171,1120,181,1200,197.3C1280,213,1360,235,1400,245.3L1440,256L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
           <div class="container pt-3">
@@ -75,7 +84,7 @@
                     <img src="/img/feature.svg" alt="Feature image">
                 </div>
                   <div class="col-md-6">
-                      <h2 class="title">Introducing MDN</h2>
+                      <h2 class="title">Introducing MARS</h2>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                       <ul>
@@ -90,6 +99,7 @@
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L40,122.7C80,117,160,107,240,122.7C320,139,400,181,480,186.7C560,192,640,160,720,133.3C800,107,880,85,960,64C1040,43,1120,21,1200,42.7C1280,64,1360,128,1400,160L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
       </section>
+      
       <section class="icons">
           <div class="container">
               <div class="row text-center">
@@ -124,6 +134,7 @@
           </div>
 
       </section>
+      <!-- Recent work -->
       <section class="gallery">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260"><path fill="#fff" fill-opacity="1" d="M0,96L40,128C80,160,160,224,240,224C320,224,400,160,480,144C560,128,640,160,720,160C800,160,880,128,960,112C1040,96,1120,96,1200,101.3C1280,107,1360,117,1400,122.7L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
           <div class="container">
@@ -147,15 +158,16 @@
                     </div>
                 </div>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L40,128C80,128,160,128,240,122.7C320,117,400,107,480,90.7C560,75,640,53,720,69.3C800,85,880,139,960,138.7C1040,139,1120,85,1200,64C1280,43,1360,53,1400,58.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"><path fill="#fff" fill-opacity="1" d="M0,128L40,128C80,128,160,128,240,122.7C320,117,400,107,480,90.7C560,75,640,53,720,69.3C800,85,880,139,960,138.7C1040,139,1120,85,1200,64C1280,43,1360,53,1400,58.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
       </section>
+      <!-- Services -->
       <section class="services gradient">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260"><path fill="#fff" fill-opacity="1" d="M0,96L40,128C80,160,160,224,240,224C320,224,400,160,480,144C560,128,640,160,720,160C800,160,880,128,960,112C1040,96,1120,96,1200,101.3C1280,107,1360,117,1400,122.7L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
           <div class="container">
               <div class="row align-items-center justify-content-center">
                   <div class="col-md-5">
                     <button type="button" class="btn btn-outline-warning mb-3">Coding</button>
-                    <h1>Lorem Ipsum</h1>
+                    <h1>Lorem Ipsum Coding</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry.</p>
                     </div>
@@ -163,21 +175,22 @@
                   <div class="col-md-5"><img src="img/marketing.svg" alt="marketing"></div>
                   <div class="col-md-5">
                     <button type="button" class="btn btn-outline-warning mb-3">Marketing</button>
-                    <h1>Lorem Ipsum</h1>
+                    <h1>Lorem Ipsum Marketing</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry.</p>
                     </div>
                   <div class="col-md-6">
                     <button type="button" class="btn btn-outline-warning mb-3">Revenue</button>
-                    <h1>Lorem Ipsum</h1>
+                    <h1>Lorem Ipsum Revenue</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry.</p>
                     </div>
                   <div class="col-md-6"><img src="img/revenue_.svg" alt="revenue"></div>
               </div>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L40,128C80,128,160,128,240,122.7C320,117,400,107,480,90.7C560,75,640,53,720,69.3C800,85,880,139,960,138.7C1040,139,1120,85,1200,64C1280,43,1360,53,1400,58.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="#fff" fill-opacity="1" d="M0,128L40,128C80,128,160,128,240,122.7C320,117,400,107,480,90.7C560,75,640,53,720,69.3C800,85,880,139,960,138.7C1040,139,1120,85,1200,64C1280,43,1360,53,1400,58.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
       </section>
+      <!-- Contact -->
       <section class="contact">
           <div class="container">
               <div class="row">
@@ -203,7 +216,7 @@
       </section>
       <footer class="gradient">
           <div class="container-fluid text-center">
-            <span>Made with love by <a href="#">MDN</a></span>
+            <span>Made with 💗 by <a href="#">MARS</a></span>
           </div>
       </footer>
 
